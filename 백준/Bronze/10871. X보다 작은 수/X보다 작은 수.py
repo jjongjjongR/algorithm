@@ -5,15 +5,11 @@ input = sys.stdin.readline
 
 def main():
     N, X = map(int, input().strip().split())
-    num = list(map(int, input().strip().split()))
-    
-    result = []
+    li = list(map(int, input().strip().split()))
+    fin_li = li[:N]
 
-    for nume in num:
-        if(nume < X):
-           result.append(str(nume))
-
-    print(' '.join(result))
-
+    for li_num in fin_li:
+        if (li_num < X):
+            print(li_num, end=' ')
 if __name__ == "__main__":
     main()
